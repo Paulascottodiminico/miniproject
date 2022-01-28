@@ -44,6 +44,7 @@ export default {
   box-sizing: border-box;
   background-position: center;
   background-size: cover;
+  display: flex;
 }
 
 .intro h1 {
@@ -90,8 +91,10 @@ a {
 
 @media (min-width: 850px) {
   .post-preview {
-    width: 400px;
-    margin: 10px;
+    width: 900px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    margin-top: 40px;
   }
 }
 
