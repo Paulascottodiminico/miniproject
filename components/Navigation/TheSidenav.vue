@@ -8,9 +8,7 @@
     <div
       v-if="show"
       class="sidenav">
-      <ul
-        class="nav-list"
-        @click="$emit('close')">
+      <ul class="nav-list" @click="$emit('close')">
         <!-- Close the sidemap if you press everywhere on the page -->
         <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link>
         <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
