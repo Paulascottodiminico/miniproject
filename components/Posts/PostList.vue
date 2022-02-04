@@ -3,6 +3,7 @@
     <section class="post-list">
       <PostPreview 
         id='1'
+        :is-admin="isAdmin"
         thumbnail= "https://cdn.techinasia.com/wp-content/uploads/2017/01/code-1839406_1280-750x500.jpg"
         title="HTML/CSS"
         previewText="Always wanted to know how to build your own website?"/>
@@ -32,6 +33,12 @@ import PostPreview from '@/components/Posts/PostPreview'
 export default{
   components: {
     PostPreview
+  },
+  props: {
+      isAdmin: {
+          type: Boolean,
+          default: false
+      }
   }
 }
 </script>
